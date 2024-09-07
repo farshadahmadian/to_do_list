@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <form class="add-container padding">
+      <input class="input add-input" type="text" placeholder="Add Item" />
+      <button class="btn add-btn">
+        <img class="img-plus" src="./assets/add.png" alt="Plus" />
+      </button>
+    </form>
+    <main class="main padding">
+      <header class="header-container">
+        <h1>List</h1>
+        <form class="sort-form">
+          <select class="input sort-input" name="sort" id="sort">
+            <option value="sort by title">sort by title</option>
+            <option value="sort by finished">sort by finished</option>
+          </select>
+          <button class="btn sort-btn">Sort</button>
+        </form>
+        <button class="btn clear-btn">Clear</button>
+      </header>
+      <ul class="list"></ul>
+    </main>
+    <script src="src/main.ts" type="module" defer></script>
+  </body>
+</html>
